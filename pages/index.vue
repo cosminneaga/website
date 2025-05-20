@@ -28,15 +28,13 @@
         <div 
             v-for="skill in skillsKnown" 
             :key="skill.name" 
-            class="w-[120px] text-center flex flex-col justify-end"
+            class="w-[120px] h-[120px] text-center flex flex-col justify-end"
         >
-          <NuxtImg
+          <img
             :src="`/pics/tech-logo/${skill.url}`"
             :alt="skill.name"
-            class="m-2"
-            width="100"
-            height="100"
-            fit="outside"
+            class="p-2"
+            style="height: 100%; width: auto; object-fit: contain; object-position: center;"
           />
           <p>{{ skill.name }}</p>
         </div>
@@ -60,15 +58,13 @@
         <div 
             v-for="skill in skillsTested" 
             :key="skill.name" 
-            class="w-[120px] text-center flex flex-col justify-end"
+            class="w-[120px] h-[120px] text-center flex flex-col justify-end"
         >
-          <NuxtImg
+          <img
             :src="`/pics/tech-logo/${skill.url}`"
             :alt="skill.name"
-            class="m-2"
-            width="100"
-            height="100"
-            fit="outside"
+            class="p-2"
+            style="height: 100%; width: auto; object-fit: contain; object-position: center;"
           />
           <p>{{ skill.name }}</p>
         </div>
