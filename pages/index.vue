@@ -5,7 +5,7 @@ const config = useRuntimeConfig();
 <template>
   <div class="text-center">
     <h1 class="gradient-text text-4xl md:text-7xl">Hi, I'm Cosmin.</h1>
-    <h2 class="text-2xl md:text-4xl my-4 md:my-12">
+    <h2 class="text-2xl md:text-4xl my-12">
       I am a <span class="gradient-text">Software Engineer</span> who has
       embarked on a <span class="gradient-text">continuous journey</span>
       of building software solutions using a variety of
@@ -20,19 +20,19 @@ const config = useRuntimeConfig();
         <UIcon
           name="i-lucide-check"
           size="40"
-          class="text-green-500"
+          class="text-green-500 hidden md:block"
           mode="svg"
         />
-        <span class="text-xl"
+        <span class="text-md md:text-xl text-center md:text-left"
           >A few technologies and tools that I have been working with
           recently.</span
         >
       </div>
-      <div class="flex flex-wrap justify-center items-stretch gap-10 mt-4">
+      <div class="flex flex-wrap justify-center items-stretch gap-10 mt-12">
         <div 
             v-for="skill in skillsKnown" 
             :key="skill.name" 
-            class="w-[120px] h-[120px] text-center flex flex-col justify-end"
+            class="w-[80px] h-[80px] md:w-[120px] md:h-[120px] text-center flex flex-col justify-end"
         >
           <img
             :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`"
@@ -50,19 +50,19 @@ const config = useRuntimeConfig();
         <UIcon
           name="i-lucide-check"
           size="40"
-          class="text-green-500"
+          class="text-green-500 hidden md:block"
           mode="svg"
         />
-        <span class="text-xl"
+        <span class="text-md md:text-xl text-center md:text-left"
           >I have also studied and gained some work experience with the
           following.</span
         >
       </div>
-      <div class="flex flex-wrap justify-center items-stretch gap-10 mt-4">
+      <div class="flex flex-wrap justify-center items-stretch gap-10 mt-12">
         <div 
             v-for="skill in skillsTested" 
             :key="skill.name" 
-            class="w-[120px] h-[120px] text-center flex flex-col justify-end"
+            class="w-[80px] h-[80px] md:w-[120px] md:h-[120px] text-center flex flex-col justify-end"
         >
           <img
             :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`"
