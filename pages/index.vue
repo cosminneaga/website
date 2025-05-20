@@ -1,3 +1,7 @@
+<script setup>
+const config = useRuntimeConfig();
+</script>
+
 <template>
   <div class="text-center">
     <h1 class="gradient-text text-4xl md:text-7xl">Hi, I'm Cosmin.</h1>
@@ -31,7 +35,7 @@
             class="w-[120px] h-[120px] text-center flex flex-col justify-end"
         >
           <img
-            :src="`/pics/tech-logo/${skill.url}`"
+            :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`"
             :alt="skill.name"
             class="p-2"
             style="height: 100%; width: auto; object-fit: contain; object-position: center;"
@@ -61,7 +65,7 @@
             class="w-[120px] h-[120px] text-center flex flex-col justify-end"
         >
           <img
-            :src="`/pics/tech-logo/${skill.url}`"
+            :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`"
             :alt="skill.name"
             class="p-2"
             style="height: 100%; width: auto; object-fit: contain; object-position: center;"

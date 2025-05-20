@@ -17,6 +17,12 @@ export default defineNuxtConfig({
     '~/assets/style/index.css',
   ],
 
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    },
+  },
+
   /* ui: {
     colorMode: 'dark',
   } */
