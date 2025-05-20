@@ -17,11 +17,11 @@ jobs:
         with:
           node-version: "20"
 
-      - run: npx nypm install
+      - run: npm install
       - run: npm run build
         env:
           NITRO_PRESET: github_pages
-          BASE_URL: https://cosminneaga.github.io/website/
+          BASE_URL: https://cosminneaga.github.io/website
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
