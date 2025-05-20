@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+html, body {
+    /* padding: 0; */
+    margin: 0;
+    min-width: 320px;
+    background-color: #181818;
+    color: #fff;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+
+/* *, */
+/* *::before, */
+/* *::after { */
+    /* box-sizing: border-box; */
+    /* margin: 0; */
+    /* position: relative; */
+    /* font-weight: normal; */
+/* } */
+
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #0091ea,   /* Strong Blue */
+    #00b0ff,   /* Bright Blue */
+    #4fc3f7,   /* Aqua Blue */
+    #80dfff,   /* Light Blue */
+    #b3ecff,   /* Sky Blue Tint */
+    #fff3b0,   /* Soft Yellow */
+    #ffe066,   /* Warm Yellow */
+    #ffd36e    /* Golden Yellow */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+
