@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
         env:
           NITRO_PRESET: github_pages
-          BASE_URL: ${{ steps.deployment.outputs.page_url }}
+          BASE_URL: https://cosminneaga.github.io/website/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
