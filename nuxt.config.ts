@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Cosmin\'s Portfolio',
-      llnk: [
+      link: [
         { rel: 'icon', type: 'image/x-icon', href: `${process.env.BASE_URL}/favicon.ico` },
       ]
     }
