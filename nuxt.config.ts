@@ -23,6 +23,15 @@ export default defineNuxtConfig({
     },
   },
 
+  app: {
+    head: {
+      title: 'Cosmin\'s Portfolio',
+      llnk: [
+        { rel: 'icon', type: 'image/x-icon', href: `${process.env.BASE_URL}/favicon.ico` },
+      ]
+    }
+  }
+
   /* ui: {
     colorMode: 'dark',
   } */
