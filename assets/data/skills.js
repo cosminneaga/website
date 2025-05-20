@@ -68,7 +68,7 @@ export const skillsKnown = [
             url: "postman.png",
         },
         {
-            name: "Linux Systems (Debian)",
+            name: "Linux (Debian)",
             url: "linux.png"
         },
         {
