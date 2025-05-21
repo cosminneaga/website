@@ -63,6 +63,13 @@
     </div>
     <!-- TECHNOLOGIES -->
 
+    <!-- RESUME -->
+    <div class="resume max-w-[800px] mx-auto my-20">
+      <h2 class="text-center text-2xl md:text-5xl">Curriculum Vitae</h2>
+      <ContentRenderer :value="resume" />
+    </div>
+    <!-- RESUME -->
+
     <!-- PROJECTS -->
     <div class="my-20">
       <h2 class="text-center text-2xl md:text-5xl">Projects</h2>
@@ -72,6 +79,7 @@
           :key="work.title"
           :title="work.title"
           :imageUrl="work.img"
+          :imageAlt="work.title"
           :description="work.description"
           :tags="work.tags"
           :technologies="work.technologies"
@@ -90,4 +98,15 @@
 import { skillsKnown, skillsTested } from "assets/data/skills.js";
 import { workList } from "assets/data/work.js";
 const config = useRuntimeConfig();
+
+// const resume = await queryCollection("resume").path('/resume').first();
+// console.log(resume);
+
+const { data: resume } = await useAsyncData("resume", () => {
+  return queryCollection("resume")
+    .path("/resume")
+    .first();
+});
+console.log(resume.value);
+
 </script>

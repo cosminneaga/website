@@ -24,10 +24,8 @@ export const workList = [
       "React Native",
       "Expo",
       "Firebase",
-      "NodeJS",
+      "Strapi",
       "GlueStack UI",
-      "Android",
-      "IOS",
       2025
     ]
   },
@@ -50,13 +48,9 @@ export const workList = [
     tags: [
       "NuxtJS",
       "PrimeVue",
-      "PrimeIcons",
-      "PrimeFlex",
-      "MySQL",
-      "CRM",
+      "MariaDB",
+      "Strapi",
       "SEO",
-      "Google Index",
-      "Full-Stack Web App",
       2024
     ]
   },
@@ -79,16 +73,11 @@ export const workList = [
       "database",
     ],
     tags: [
-      "Docker",
-      "Full-Stack",
       "Nuxt3",
       "PrimeVue",
-      "PrimeIcons",
-      "PrimeFlex",
-      "Database",
-      "CRM",
+      "MySQL",
+      "Strapi",
       "SEO",
-      "Google Indexing",
       2023,
     ],
   },
