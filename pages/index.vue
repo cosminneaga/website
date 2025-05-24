@@ -48,15 +48,6 @@
     </div>
     <!-- TECHNOLOGIES -->
 
-    <!-- <iframe src="https://rxresu.me/cosmin.neaga91/ajutor-sef-depozit" frameborder="0"></iframe> -->
-
-    <!-- RESUME -->
-    <!-- <div class="resume max-w-[800px] mx-auto my-20">
-      <h2 class="text-center text-2xl md:text-5xl">Curriculum Vitae</h2>
-      <ContentRenderer :value="resume" />
-    </div> -->
-    <!-- RESUME -->
-
     <!-- PROJECTS -->
     <div class="my-20" id="projects">
       <h2 class="text-center text-2xl md:text-5xl py-10">
@@ -79,61 +70,61 @@
 
       <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/degree/degree.png" alt="University of Roehampton degree"
+          <img :src="`${config.public.baseUrl}/pics/certification/degree/degree.png`" alt="University of Roehampton degree"
             class="w-[100%] h-auto" />
         </div>
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/degree/transcript-redacted_Page_1.png" alt="University of Roehampton transcript"
-            class="w-[100%] h-auto" />
-        </div>
-      </div>
-      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
-        <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/python/intro.png" alt="Python introduction" class="w-[100%] h-auto" />
-        </div>
-        <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/python/functions.png" alt="Python functions" class="w-[100%] h-auto" />
-        </div>
-      </div>
-      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
-        <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/python/datatypes.png" alt="Python datatypes" class="w-[100%] h-auto" />
-        </div>
-        <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/python/datastructures.png" alt="Python datastructures"
+          <img :src="`${config.public.baseUrl}/pics/certification/degree/transcript-redacted_Page_1.png`" alt="University of Roehampton transcript"
             class="w-[100%] h-auto" />
         </div>
       </div>
       <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/python/oop.png" alt="Python OOP" class="w-[100%] h-auto" />
+          <img :src="`${config.public.baseUrl}/pics/certification/python/intro.png`" alt="Python introduction" class="w-[100%] h-auto" />
         </div>
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/python/pandas.png" alt="Python Pandas" class="w-[100%] h-auto" />
-        </div>
-      </div>
-      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
-        <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/css.png" alt="CSS" class="w-[100%] h-auto" />
-        </div>
-        <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/html.png" alt="HTML" class="w-[100%] h-auto" />
+          <img :src="`${config.public.baseUrl}/pics/certification/python/functions.png`" alt="Python functions" class="w-[100%] h-auto" />
         </div>
       </div>
       <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/js-udemy.png" alt="JavaScript Udemy" class="w-[100%] h-auto" />
+          <img :src="`${config.public.baseUrl}/pics/certification/python/datatypes.png`" alt="Python datatypes" class="w-[100%] h-auto" />
         </div>
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/js-sololearn.png" alt="JavaScript SoloLearn" class="w-[100%] h-auto" />
+          <img :src="`${config.public.baseUrl}/pics/certification/python/datastructures.png`" alt="Python datastructures"
+            class="w-[100%] h-auto" />
         </div>
       </div>
       <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/nodejs.png" alt="Node.js" class="w-[100%] h-auto" />
+          <img :src="`${config.public.baseUrl}/pics/certification/python/oop.png`" alt="Python OOP" class="w-[100%] h-auto" />
         </div>
         <div class="max-w-[600px] min-w-[340px]">
-          <img src="/pics/certification/php.png" alt="PHP" class="w-[100%] h-auto" />
+          <img :src="`${config.public.baseUrl}/pics/certification/python/pandas.png`" alt="Python Pandas" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img :src="`${config.public.baseUrl}/pics/certification/css.png`" alt="CSS" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img :src="`${config.public.baseUrl}/pics/certification/html.png`" alt="HTML" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img :src="`${config.public.baseUrl}/pics/certification/js-udemy.png`" alt="JavaScript Udemy" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img :src="`${config.public.baseUrl}/pics/certification/js-sololearn.png`" alt="JavaScript SoloLearn" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img :src="`${config.public.baseUrl}/pics/certification/nodejs.png`" alt="Node.js" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img :src="`${config.public.baseUrl}/pics/certification/php.png`" alt="PHP" class="w-[100%] h-auto" />
         </div>
       </div>
     </div>
