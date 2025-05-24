@@ -13,100 +13,135 @@
     </div>
     <!-- HERO -->
 
+    <p class="text-center text-lg md:text-2xl my-10 hover:text-yellow-500 hover:underline">
+      <a href="https://rxresu.me/cosmin.neaga91/software-engineer" target="_blank" rel="noopener noreferrer">Checkout my
+        Resume</a>
+    </p>
+
     <!-- TECHNOLOGIES -->
     <div class="flex flex-col gap-10">
       <div>
         <div class="flex items-center">
-          <UIcon
-            name="i-lucide-check"
-            size="40"
-            class="text-green-500 hidden md:block"
-            mode="svg"
-          />
+          <UIcon name="i-lucide-check" size="40" class="text-green-500 hidden md:block" mode="svg" />
           <span class="text-md md:text-xl text-center md:text-left">
             A few technologies and tools that I have been working with
-            recently.</span
-          >
+            recently.</span>
         </div>
         <div class="flex flex-wrap justify-center items-stretch gap-10 mt-12">
-          <CardSkill
-            v-for="skill in skillsKnown"
-            :key="skill.name"
-            :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`"
-            :name="skill.name"
-          />
+          <CardSkill v-for="skill in skillsKnown" :key="skill.name"
+            :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`" :name="skill.name" />
         </div>
       </div>
 
       <div>
         <div class="flex items-center">
-          <UIcon
-            name="i-lucide-check"
-            size="40"
-            class="text-green-500 hidden md:block"
-            mode="svg"
-          />
-          <span class="text-md md:text-xl text-center md:text-left"
-            >I have also studied and gained some work experience with the
-            following.</span
-          >
+          <UIcon name="i-lucide-check" size="40" class="text-green-500 hidden md:block" mode="svg" />
+          <span class="text-md md:text-xl text-center md:text-left">I have also studied and gained some work experience
+            with the
+            following.</span>
         </div>
         <div class="flex flex-wrap justify-center items-stretch gap-10 mt-12">
-          <CardSkill
-            v-for="skill in skillsTested"
-            :key="skill.name"
-            :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`"
-            :name="skill.name"
-          />
+          <CardSkill v-for="skill in skillsTested" :key="skill.name"
+            :src="`${config.public.baseUrl}/pics/tech-logo/${skill.url}`" :name="skill.name" />
         </div>
       </div>
     </div>
     <!-- TECHNOLOGIES -->
 
+    <!-- <iframe src="https://rxresu.me/cosmin.neaga91/ajutor-sef-depozit" frameborder="0"></iframe> -->
+
     <!-- RESUME -->
-    <div class="resume max-w-[800px] mx-auto my-20">
+    <!-- <div class="resume max-w-[800px] mx-auto my-20">
       <h2 class="text-center text-2xl md:text-5xl">Curriculum Vitae</h2>
       <ContentRenderer :value="resume" />
-    </div>
+    </div> -->
     <!-- RESUME -->
 
     <!-- PROJECTS -->
-    <div class="my-20">
-      <h2 class="text-center text-2xl md:text-5xl">Projects</h2>
-      <div class="flex flex-wrap justify-center gap-2 mt-10">
-        <CardWork 
-          v-for="work in workList"
-          :key="work.title"
-          :title="work.title"
-          :imageUrl="work.img"
-          :imageAlt="work.title"
-          :description="work.description"
-          :tags="work.tags"
-          :technologies="work.technologies"
-          :urlWeb="work.urlWeb"
-          :urlGithub="work.urlGithub"
-          :urlAndroid="work.urlAndroid"
-          :urlIOS="work.urlIOS"
-          :urlNpm="work.urlNpm"
-        />
+    <div class="my-20" id="projects">
+      <h2 class="text-center text-2xl md:text-5xl py-10">
+        <a href="#projects" class="hover:underline hover:text-yellow-500">Projects</a>
+      </h2>
+      <div class="flex flex-wrap justify-center gap-2">
+        <CardWork v-for="work in workList" :key="work.title" :title="work.title" :imageUrl="work.img"
+          :imageAlt="work.title" :description="work.description" :tags="work.tags" :technologies="work.technologies"
+          :urlWeb="work.urlWeb" :urlGithub="work.urlGithub" :urlAndroid="work.urlAndroid" :urlIOS="work.urlIOS"
+          :urlNpm="work.urlNpm" />
       </div>
     </div>
     <!-- PROJECTS -->
+
+    <!-- ACHIEVEMENTS -->
+    <div class="my-20" id="achievements">
+      <h2 class="text-center text-2xl md:text-5xl py-10">
+        <a href="#achievements" class="hover:underline hover:text-yellow-500">Achievements</a>
+      </h2>
+
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/degree/degree.png" alt="University of Roehampton degree"
+            class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/degree/transcript-redacted_Page_1.png" alt="University of Roehampton transcript"
+            class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/python/intro.png" alt="Python introduction" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/python/functions.png" alt="Python functions" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/python/datatypes.png" alt="Python datatypes" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/python/datastructures.png" alt="Python datastructures"
+            class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/python/oop.png" alt="Python OOP" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/python/pandas.png" alt="Python Pandas" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/css.png" alt="CSS" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/html.png" alt="HTML" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/js-udemy.png" alt="JavaScript Udemy" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/js-sololearn.png" alt="JavaScript SoloLearn" class="w-[100%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-10 my-4">
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/nodejs.png" alt="Node.js" class="w-[100%] h-auto" />
+        </div>
+        <div class="max-w-[600px] min-w-[340px]">
+          <img src="/pics/certification/php.png" alt="PHP" class="w-[100%] h-auto" />
+        </div>
+      </div>
+    </div>
+    <!-- ACHIEVEMENTS -->
   </div>
 </template>
 <script setup>
 import { skillsKnown, skillsTested } from "assets/data/skills.js";
 import { workList } from "assets/data/work.js";
 const config = useRuntimeConfig();
-
-// const resume = await queryCollection("resume").path('/resume').first();
-// console.log(resume);
-
-const { data: resume } = await useAsyncData("resume", () => {
-  return queryCollection("resume")
-    .path("/resume")
-    .first();
-});
-console.log(resume.value);
-
 </script>
